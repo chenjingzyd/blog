@@ -1,0 +1,329 @@
+<!doctype html>
+
+<html lang="zh">
+<head>
+
+  <meta charset="utf-8">
+  <title>FormPlayer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="img/favicon.ico" />
+
+<!--Style-->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+    
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+      <!-- Tangle -->
+    <script type="text/javascript" src="js/Tangle.js"></script>
+
+    <!-- TangleKit (optional) -->
+    <link rel="stylesheet" href="js/TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="js/TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="js/TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="js/TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="js/TangleKit/TangleKit.js"></script>
+
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+<!-- drag text to change slices -->
+    <script type="text/javascript">
+
+        function changeImage(a) {
+        document.getElementById("slices").src=a;
+    }
+
+
+        function setUpTangle () {
+
+
+            var element = document.getElementById("versions");
+
+            var tangle = new Tangle(element, {
+                initialize: function () {
+                    this.cookies = 5;
+                    
+                },
+                update: function () {
+                    if (this.cookies == 1) {
+                        changeImage("img/full/slice1.gif");
+                    }
+                    if (this.cookies == 2) {
+                        changeImage("img/full/slice2.gif");
+                    }
+                    if (this.cookies == 3) {
+                        changeImage("img/full/slice3.gif");
+                    }
+                    if (this.cookies == 4) {
+                        changeImage("img/full/slice4.gif");
+                    }
+                    if (this.cookies == 5) {
+                        changeImage("img/full/slice5.gif");
+                    }
+                }
+            });
+        }
+
+    </script>  
+</head>
+
+<body onload="setUpTangle();">
+  <div class="container">
+    <!--Preloader-->
+
+    <div class="preloader" id="preloader">
+        <div class="item">
+          <div class="spinner">
+          </div>
+        </div>
+    </div>
+
+      <!--Header-->
+      <header class="boxed" id="header-white">
+
+        <div class="header-margin">
+
+          <div class="logo"><a href="index.html"><img alt="logo"  src="img/logo-cj.png"></a></div>
+          <ul class="header-nav">
+            <li><a class="active" href="index.html">项目</a>
+            </li>
+            <li><a href="about-me.html">关于我</a></li>
+            <li><a href="contact.html">联系</a></li>
+          </ul>
+
+          <ul class="social-icon">
+            <li ><a id="language" href="formplayer-en.html">English</a></li>
+          </ul>
+
+        </div>
+      </header>
+
+      <div class="clear"></div>
+  
+
+      <!--Content-->
+
+      <div class="content" id="ajax-content">
+
+     
+            <div style="margin: 110px auto;">
+              <img src="img/full/formplayer-1-zh.jpg" width="100%">
+            </div>   
+
+            <div class="text-intro" id="project-intro">
+
+                 <div class="half-column">
+                  <div class="design-thought">
+                    <p style="font-weight: 400;"><span style="color: #353535; font-weight: 600;">个人思考</span>：“Play is the highest form of research.” 爱因斯坦曾说。现在，我们更多地关注machine learninig，提高机器的智力。然而，计算机不仅可以用作游戏、娱乐和购物等，更重要的，也能来帮助我们学习。计算机技术应该让我们，特别是孩子们，更加聪明。
+                    <br/> <br/> 
+                    <img src="img/full/learn-through-play.jpg"><br/>                 
+                    <span style="color: #8d8d8d;"> We learn through playing.</span>
+                    </p>
+                  </div>
+                  
+                 </div>
+
+    		          <div class="half-column">
+    		            <p>
+                    <span style="color: #353535; font-weight: 600; line-height: 200%;">项目信息</span> <br/>
+                  - 交互式软件<br/>
+                  - 用户界面<br/>
+                  - <a style="color: #8d8d8d; border-bottom: 1px dashed #353535" href=" https://processing.org/" target="_blank">Processing 3</a>
+                    <br/>
+                    <br/>
+
+                    <span style="color: #353535; font-weight: 600; line-height: 200%;">我做了</span> <br/>
+                    - 编写应用<br/>
+                    - 试玩应用<br/>
+                    - 搜集反馈<br/>
+                    <br/>
+
+                    <span style="color: #353535; font-weight: 600; line-height: 200%;">灵感来源</span> <br/>
+                      - <a style="color: #8d8d8d; border-bottom: 1px dashed #353535" href="http://worrydream.com/MagicInk/" target="_blank">Magic Ink</a><br/>
+                      - <a style="color: #8d8d8d; border-bottom: 1px dashed #353535" href="https://movie.douban.com/subject/20274060/?from=tag_all" target="_blank">Teaching to See</a><br/>
+                      - <a style="color: #8d8d8d; border-bottom: 1px dashed #353535" href="https://book.douban.com/subject/26350879/" target="_blank">The Best Interface Is No Interface</a><br/>
+      		          </p>
+
+      		          </div>   
+                     				  
+                    <div class="clear"></div>   				          				       
+            </div>
+     
+		        <div class="project-detail">
+                <br><br><br><br><br><br><br><br>
+                <img src="img/full/formplayer.gif" width="100%">
+                <p id="img-intro" style="margin-top: 20px;">
+                  <span>FormPlayer 应用 (<a style="color: #8d8d8d; border-bottom: 1px dashed #353535" href="https://share.weiyun.com/db5c2ae8bae83e1ced08eba5774c96c3" target="_blank">下载</a>)</span> 
+                </p>
+                <br>
+                <br>
+
+                <h3>想法</h3>
+                <p>
+                  最开始的想法来自一部纪录片 <a style="color: #222222; border-bottom: 1px dashed #353535" href="https://movie.douban.com/subject/20274060/?from=tag_all" target="_blank">Teaching to See</a>，讲述者是一位当代艺术教育领域里杰出的设计师、教育家 Inge Druckrey。在她的一个课程中，她要求学生们用5个基本形状来练习平面构成。<br>
+                  
+                </p>
+                <img src="img/full/studentworks.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span>设计练习</span>
+                </p>
+                
+
+                <br/><br/>
+
+                <h3>目标</h3>
+                <p>
+                 这个项目的目标是<span style="font-weight: 600;">设计并编写一个简单的应用</span>来进行同样是5个形状的平面构成练习。
+                </p>
+                <p>这样做主要有2个原因：<br/>
+                  (1) 能自己动手尝试实现它，而不是重设计一个有很多功能的原型。<br/>
+                  (2) 能更详细地体验到设计与实现如何进行协作。 <br/></p>
+                <br/><br/>
+
+                <h3>设计</h3>
+
+                <p><span style="font-weight: 600;">任务分析</span><br>
+                 首先，使用 Photoshop 或者 Sketch，来进行练习的操作流程如下:<br/> 
+                  (1) 新建一个画布<br/> 
+                  (2) 绘制一个形状<br/> 
+                  (3) 移动这个形状<br/> 
+                  (4) 重复 4 次（步骤 2 和 步骤 3）<br/> 
+                  (5) 创建另一版本<br/> 
+                  (6) 比较两个版本<br/> 
+                </p>
+                <img src="img/full/workflow-in-sketch.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span >Sketch 中的操作流程</span>
+                </p>
+
+                <p><span style="font-weight: 600;">用户界面 </span><br><a style="color: #222222; border-bottom: 1px dashed #353535" href="https://book.douban.com/subject/26350879/" target="_blank">The Best Interface Is No Interface</a>。用户界面帮助我们更好地聚焦当前的操作和更好地探索。第一版本 GUI 中的按钮，影响了对画布中平面布局的感知。最后，我使用了按键来替代按钮。
+                  
+                </p>
+                <img src="img/full/user-interface-v1.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span >第一版本</span>
+                </p>
+                <br/>
+                <img src="img/full/user-interface-last.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span >最终版本</span>
+                </p>
+                <br/><br/>
+
+                <h3>实现</h3>
+                <p>
+                  根据任务分析，我编写了程序能自动随机产生5个形状，当按下空格键的时候。
+                  这样做的考虑是：<br>
+                  (1) 用户能聚焦在移动和比较这两个操作上。<br>
+                  (2) 程序能给我们无穷多的形状组合，帮助我们探索更多的可能性。<br>
+
+                </p>
+                <img src="img/full/randomGenerate.gif" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span>按空格键重新开始</span>
+                </p>
+                <br/>
+                <img src="img/full/save.gif" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span >按 S 键保存</span>
+                </p>
+                <br/>
+                <img src="img/full/compare.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span >比较不同版本</span>
+                </p>
+                <br/><br/>
+
+                
+                <h3>试玩</h3>
+                <p> 这是本次项目最有意思和有价值的部分。我搜集了一些自己和朋友们的试玩小作品。 
+                </p>
+                <img src="img/full/myplay.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                  <span >我的小作品</span>
+                </p>
+                <br/>
+                <img src="img/full/compare.jpg" width="100%"><br/><br/>
+                <p id="img-intro">
+                <span >朋友们的小作品</span>
+                </p>
+                <br/><br/>
+
+                <h3>Gif</h3>
+                <p>
+                  设计了一个小功能：当你退出程序的时候，能将保存下来的图合成一个Gif。
+                  <p></p>
+                  <img src="img/full/gif.gif" width="100%"><br/><br/>
+                  <p id="img-intro">
+                    <span>Gif</span>
+                  </p>
+                </p>
+                <br/><br/>
+
+                <h3>未来工作</h3>
+                <p>
+                由于我有限的编程能力，本应用还有很多不足，特别是保存和比较这两个功能没能很好实现。我希望下一本能更好地实现这些功能，比如通过直接拖拽文字来查看比较保存的图。
+                <br/>
+                <div>
+                    <img id="slices" src="img/full/slice1.gif">
+                </div>
+                <br/><br/>
+                <p id="versions" style="text-align: center" >
+                  Version <span data-var="cookies" class="TKAdjustableNumber" data-min="1" data-max="5"></span> 
+                </p>
+
+                <br/><br/><br/><br/>
+                <div>
+                    <p style="font-style: italic; font-size:17px; text-align: center; color: #353535; font-weight: 600; line-height: 200%;">
+                    Good interaction design helps us learn better.
+                  </p>
+                 </div>
+
+              <div class="clear"></div>
+            </div>   
+      </div>
+
+
+      <!--Footer-->
+
+      <footer>
+
+        <div class="footer-margin">
+          <div class="social-footer">
+            <a href="https://twitter.com/_Chen_Jing" target="_blank" ><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/jing.chen.108889" target="_blank" ><i class="fa fa-facebook"></i></a>
+          </div>    
+          <div class="copyright">© Copyright 2017 Chen Jing.</div>
+           
+        </div>
+      </footer>
+
+  </div>
+
+<!--Scripts-->
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+  <script src="js/jquery.jkit.1.2.16.min.js"></script>
+ 
+  <script src="js/script.js" type="text/javascript"></script>
+  
+	<script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script>
+
+
+</body>
+</html>

@@ -51,7 +51,7 @@ a:focus {
 
 
 strong{
-  font-weight:700;
+  font-weight:600;
 
 }
 
@@ -387,11 +387,12 @@ CONTENT
 }
 
 .project-detail p{
-  margin: 0 auto 25px;
-  font-weight: 300;
-  font-size: 1.25em;
+  margin: 0 auto 30px;
+/*  font-weight: 400;
+*/  font-size: 1.25em;
   line-height: 33px;
 }
+
 
 .content{
   width:1140px;
@@ -418,7 +419,7 @@ CONTENT
   margin-top: 7px;
   font-weight:400;
   line-height: 25px;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   width:50%;
 }
 
@@ -429,8 +430,21 @@ CONTENT
   /*font-family: 'Robot';*/
   font-style: italic;
   font-weight: 500;
-  line-height: 23px;
-}   
+  line-height: 25px;
+}  
+
+
+#img-intro{
+  color: #8d8d8d ;
+  text-align: center;
+} 
+#img-intro span{
+  font-style: italic;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1;
+  font-weight: 400;
+}
 /*
 **************************
 HOME SIDEBAR
