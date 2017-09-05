@@ -438,6 +438,10 @@ CONTENT
   color: #8d8d8d ;
   text-align: center;
 } 
+#intern-intro {
+  color: #8d8d8d;
+  font-size: 14px;
+}
 #img-intro span{
   font-style: italic;
   font-size: 16px;
@@ -591,6 +595,13 @@ footer{
   overflow:hidden;
   position:absolute;
   bottom: 0;
+}
+
+#aboutme{
+  margin-top: 75px;
+  position: relative;
+  background: #f1f1f1;
+  width: 100%;
 }
 
 .footer-margin{
