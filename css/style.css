@@ -481,17 +481,18 @@ PORTFOLIO GRID
   width:100%;
   max-width:1170px;
   margin:0 auto;
-  padding-top:100px;
+  padding-top:50px;
 }
 
 .prev-next a{
   color:#222222;
   font-weight:500;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #353535;
 }
 
 .prev-next a:hover{
-  border-bottom:1px solid #222222;
+  
 }
 
 .prev-button{
