@@ -438,10 +438,6 @@ CONTENT
   color: #8d8d8d ;
   text-align: center;
 } 
-#intern-intro {
-  color: #8d8d8d;
-  font-size: 14px;
-}
 #img-intro span{
   font-style: italic;
   font-size: 16px;
@@ -485,18 +481,17 @@ PORTFOLIO GRID
   width:100%;
   max-width:1170px;
   margin:0 auto;
-  padding-top:50px;
+  padding-top:100px;
 }
 
 .prev-next a{
   color:#222222;
   font-weight:500;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed #353535;
+  padding-bottom: 15px;
 }
 
 .prev-next a:hover{
-  
+  border-bottom:1px solid #222222;
 }
 
 .prev-button{
@@ -595,13 +590,6 @@ footer{
   overflow:hidden;
   position:absolute;
   bottom: 0;
-}
-
-#aboutme{
-  margin-top: 75px;
-  position: relative;
-  background: #f1f1f1;
-  width: 100%;
 }
 
 .footer-margin{
